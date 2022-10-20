@@ -39,10 +39,11 @@ int main(){
     cin >> A >> B;
 
     // Seu código vai aqui
-    if (A+B==0) {
-        cout<<"C"<<endl;
-        } else if (A+B==1) {
-            cout<<"B"<<endl;
-            } else {resp="A";
-            } 
+    if (A==0) {
+            cout<<"C"<<endl;
+            } else if ((A==1)&&(B==0)) {
+                cout<<"B"<<endl;
+                } else if((A==1)&&(B==1)){
+                    cout<<"A"<<endl;
+                    } 
 }
