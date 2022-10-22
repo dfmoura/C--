@@ -4,8 +4,8 @@ using namespace std;
 int main(){
 
     cout << "\nValor com o WHILE"<<endl;
-    int i = 0;
-    while (i <= 10){
+    int i = 10;
+    while (i <= 20){
         cout << "O valor do i eh: " << i << endl;
         i++;
     }
