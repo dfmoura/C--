@@ -6,7 +6,7 @@
 
 using namespace std;
 int main(){
-    int N; //saque disponibilizado
+    int N,i=0; //saque disponibilizado
     cin >> N;
     cout << N << endl;
     cout << N/100 << " nota(s) de R$ 100,00"<< endl;
@@ -29,5 +29,6 @@ int main(){
 
     cout << N/1 << " nota(s) de R$ 1,00"<< endl;
     N = N%1;   
-
+    
+    cout<<i<<endl;
 }
