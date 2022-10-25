@@ -10,6 +10,7 @@ int main(){
     cin >> N;
     cout << N << endl;
     cout << N/100 << " nota(s) de R$ 100,00"<< endl;
+    
     N = N%100;
 
     cout << N/50 << " nota(s) de R$ 50,00"<< endl;
