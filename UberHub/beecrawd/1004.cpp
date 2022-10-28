@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 using namespace std;
-int main(void){
+int main(){
     int a,b,prod;
     cin >> a;
     cin >> b;

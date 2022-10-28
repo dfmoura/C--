@@ -8,7 +8,6 @@ using namespace std;
 int main(){
 
     float x,y;
-    string z;
     cin >> x, cin >> y;
 
     if(x + y == 0.0){

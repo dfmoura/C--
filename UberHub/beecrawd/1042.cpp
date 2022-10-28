@@ -5,7 +5,7 @@ int main()
 {
 
     int num1, num2, num3, temp, orig1, orig2, orig3;
-    cin >> num1, cin >> num2 , cin >> num3;
+    cin >> num1 >> num2 >> num3;
     orig1 = num1, orig2=num2, orig3=num3;
 
     if(num2 < num1){

@@ -6,7 +6,7 @@
 using namespace std;
 int main(){
     double base, lado, altura, pi=3.14159, triangulo, circulo, trapezio, quadrado, retangulo;
-    cin >> base, cin >> lado, cin >> altura;
+    cin >> base >> lado >> altura;
     triangulo = (base*altura)/2;
     circulo = pi * (pow(altura,2));
     trapezio = ((base+lado)*altura)/2;
