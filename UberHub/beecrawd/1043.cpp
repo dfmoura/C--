@@ -9,7 +9,7 @@ int main(){
 
     float A,B,C;
     string z;
-    cin >> A, cin >> B, cin >> C;
+    cin >> A >> B >> C;
     
     if(A < B+C && B < A+C && C < B+A ){
         cout << "Perimetro = " << fixed << setprecision(1) << A + B + C<< endl;

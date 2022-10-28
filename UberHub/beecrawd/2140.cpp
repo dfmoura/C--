@@ -17,7 +17,7 @@ int main(){
         int notas[]={2,5,10,20,50,10};
         bool possivel = false;
 
-        if(N==0 && M==0){break;}
+        if(N==0 && M==0){break;}else{
         
 
         for (int i = 0; i < 6; i++){
@@ -28,6 +28,7 @@ int main(){
 
         if (possivel){cout<<"possible"<<endl;}
         else{cout<<"impossible"<<endl;}
+        }
         
     }
     

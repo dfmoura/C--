@@ -7,9 +7,9 @@ int main(){
 //    facaIsso;
 
 
-    int i = 0;
+    int i = 1;
     cout << "Valor com o FOR"<<endl;
-    for (i = 0; i < 10; i++)
+    for (i = 1; i < 13; i++)
     {
         cout << "O valor do i eh: " << i << endl;
     }
