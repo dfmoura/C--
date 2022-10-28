@@ -12,13 +12,35 @@ int main(){
 n = número de eventos que devem ser processados
 k = número de tipos de recursos que estão disponíveis
 */    
-    int vecSize=2; 
 
-   vector<int> vetor1;
+   int N, K,i,R,T,U;
+   cin >> N >> K;
 
-   for (int i = 0; i < vecSize; i++){
-      int val;
-      cin >> val;
+   string t;
+   
+   i = 0;
+   for (i = i+1; i <= N; i++){
+      cin>> t;
+      if (t=="C"){
+         cin>>R;
+         i = 0;
+         for (i = i+1; i <=R;i++){
+            cin >> T;            
+         }
+      }
+      else if(t=="D"){
+         cin>>U;
+      }
+      else if (t=="J"){
+         cin>>R;
+         i = 0;
+         for (i = i+1; i <=R;i++){
+            cin >> T;
+         }
+
+      }
+
    }
-
+      
 }
+

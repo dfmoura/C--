@@ -16,6 +16,6 @@ int main()
     cin >> c;
     while(c--){
         cin >> x >> y;
-        cout<< soad[x+y].c_str()<< endl;
+        cout<< soad[x+y]<< endl;
     }
 }

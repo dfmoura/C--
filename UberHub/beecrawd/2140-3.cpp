@@ -9,7 +9,7 @@
 using namespace std;
 int main(){
 
-    int N,i=0,a=0,b=0; //saque disponibilizado
+    int N,i=0,a=0,b=0; 
     cin >> N;
     a=N/100;
     if((
