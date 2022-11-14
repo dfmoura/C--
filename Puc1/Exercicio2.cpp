@@ -1,8 +1,8 @@
 /*
 Divisão dos Gastos
-Aramis - c
-Porthos - d
-Athos - e
+Aramis - c : f
+Porthos - d : g
+Athos - e : h
 */
 
 #include <algorithm>
@@ -13,21 +13,33 @@ using namespace std;
 
 int main(){
 
-    int c, d, e;
-    float a,b;
-    cin>>c>>d>>e;
-    int arr[] = { c, d, e};
-    a = arr[0]+arr[1]+arr[2];
-    b = a/3;
+	//int c,d,e;
+	float a,b,c,d,e,f,g,h;
+	//int arr[] = { c, d, e};
+	cin>>c>>d>>e;
+	a = c+d+e;
+	b = a/3; 
+	f = c-b; 
+	g = d-b;
+	h = e-b;
 
         cout<<"Total dos gastos: " << setprecision(2) << fixed<<a<<endl;
-        cout<<"Valor individual: " << setprecision(2) << fixed<<b<<endl;       
+        cout<<"Valor individual: " << setprecision(2) << fixed<<b<<endl;  
         
-        cout<<c-b<<" "<<d-b<<" "<<e-b<<endl;
-        
-        cout<<"Porthos deve R$ 100.00 a Aramis"<<endl;
-        cout<<"Athos deve R$ 100.00 a Aramis"<<endl;
-        cout<<"Athos deve R$ 100.00 a Aramis e R$ 0.00 a Porthos"<<endl;
-        cout<<"Ninguem deve nada para ninguem"<<endl;
+        //cout<<c<<" "<<d<<" "<<e<<endl;
+        //cout<<f<<" "<<g<<" "<<h<<endl;     
+
+if (f>0 and g==0 and h<0){cout<<"Athos deve R$ "<<setprecision(2) << fixed<<f<<" a Aramis e R$ "<<setprecision(2) << fixed<<g<<" a Porthos"<<endl;}
+else if (f>0 and g<0 and h<0){cout<<"Porthos deve R$ "<<setprecision(2)<<fixed<<g*-1<<" a Aramis"<<endl;
+			      cout<<"Athos deve R$ "<<setprecision(2)<<fixed<<h*-1<<" a Aramis"<<endl;}
+else if (f<0 and g>0 and h>0){cout<<"Aramis deve R$ "<<setprecision(2)<<fixed<<g<<" a Porthos e R$ "<<setprecision(2)<<fixed<<h<<" a Athos"<<endl;}
+else if(f<0 and g>0 and h<0){cout<<"Aramis deve R$ "<<setprecision(2)<<fixed<<f*-1<<" a Porthos"<<endl;
+			     cout<<"Athos deve R$ "<<setprecision(2)<<fixed<<h*-1<<" a Porthos"<<endl;}
+else if(f>0 and g<0 and h>0){cout<<"Porthos deve R$ "<<setprecision(2)<<fixed<<h<<" a Athos e R$ "<<setprecision(2)<<fixed<<f<<" a Aramis"<<endl;}
+else if(f<0 and g<0 and h>0){cout<<"Aramis deve R$ "<<setprecision(2)<<fixed<<f*-1<<" a Athos"<<endl;
+			     cout<<"Porthos deve R$ "<<setprecision(2)<<fixed<<g*-1<<" a Athos"<<endl;}
+else if(f==g and g==h){cout<<"Ninguem deve nada para ninguém"<<endl;}
+else if(f>0 and g>0 and h<0){cout<<"Athos deve R$ "<<setprecision(2) << fixed<<f<<" a Aramis e R$ "<<setprecision(2) << fixed<<g<<" a Porthos"<<endl;}
+
 }
 
